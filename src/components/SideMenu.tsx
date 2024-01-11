@@ -40,7 +40,9 @@ const SideMenu = () => {
             </SheetTitle>
             <Button variant="secondary">Home</Button>
             <Button variant="secondary">Notas</Button>
-            <Link href={'/pomodoro'}>Pomodoro</Link>
+            <Button variant="secondary">
+              <Link href={'/pomodoro'}>Pomodoro</Link>
+            </Button>
             <Button variant="secondary">Cronometro</Button>
             <Button variant="secondary">Calendario</Button>
             <Button variant="secondary">Alarma</Button>
