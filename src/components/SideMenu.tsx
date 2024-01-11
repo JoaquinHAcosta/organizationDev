@@ -12,6 +12,7 @@ import {
 import { useState } from 'react'
 import { FiAlignJustify } from 'react-icons/fi'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -38,10 +39,11 @@ const SideMenu = () => {
               <Button variant="ghost">Logo</Button>
             </SheetTitle>
             <Button variant="secondary">Home</Button>
-            <Button variant="secondary">Home</Button>
-            <Button variant="secondary">Home</Button>
-            <Button variant="secondary">Home</Button>
-            <Button variant="secondary">Home</Button>
+            <Button variant="secondary">Notas</Button>
+            <Link href={'/pomodoro'}>Pomodoro</Link>
+            <Button variant="secondary">Cronometro</Button>
+            <Button variant="secondary">Calendario</Button>
+            <Button variant="secondary">Alarma</Button>
           </SheetHeader>
           <SheetClose className="border-t pt-3">Cerrar</SheetClose>
         </SheetContent>
